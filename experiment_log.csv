@@ -1,0 +1,4 @@
+run_name,variant_name,use_ddqn,max_frames,eps_decay_frames,gamma,batch_size,replay_size,target_sync_frames,learning_rate,final_mean_reward,comment
+pong_dqn_baseline,DQN,False,400000,1000000,0.99,32,50000,1000,0.0001,-18.89,"Baseline DQN from starter: long epsilon decay, 400k frames."
+pong_ddqn_baseline,Double DQN,True,400000,1000000,0.99,32,50000,1000,0.0001,-18.69,Baseline DDQN: only change is DDQN target calculation.
+pong_ddqn_tuned,Double DQN (tuned),True,600000,300000,0.99,32,50000,1000,0.0001,18.64,Tuned run: more frames (600k) and faster epsilon decay (300k) to encourage earlier exploitation.
